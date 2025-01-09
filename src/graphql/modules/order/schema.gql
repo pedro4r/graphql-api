@@ -1,0 +1,11 @@
+type Order {
+        id: Int
+        userId: Int
+        items: [Item]
+        total: Int
+        user: User
+    }
+
+type Query {
+        orders(userId: Int): [Order]
+    }

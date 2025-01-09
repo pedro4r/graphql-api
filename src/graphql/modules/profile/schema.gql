@@ -1,0 +1,13 @@
+    enum ProfileDescriptions {
+        ADMIN 
+        USER
+    }
+
+    type Profile {
+        id: Int
+        description: ProfileDescriptions
+    }
+
+    type Query {
+        profiles: [Profile]
+    }
